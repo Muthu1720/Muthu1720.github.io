@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Certified Ethical Hacker (CEH)",
+    "issuer": "EC-Council",
+    "date": "2025",
+    "file": "CEH_Certificate.pdf"
+  },
+  {
+    "name": "Advanced Diploma in Cyber Security",
+    "issuer": "Win in Life Academy",
+    "date": "2025",
+    "file": "Advanced_Diploma_Cyber_Security.pdf"
+  },
+  {
+    "name": "HSCCSP – Hacker School Certified Cyber Security Professional",
+    "issuer": "Hacker School",
+    "date": "2024",
+    "file": "HSCCSP_Certificate.pdf"
+  }
+]

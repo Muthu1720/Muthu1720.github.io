@@ -1,0 +1,108 @@
+[
+  {
+    "title": "ReconnaissPro – Network Vulnerability Scanner",
+    "shortDescription": "Python-based automated vulnerability scanner with CVE mapping and severity assessment.",
+    "fullDescription": "Designed and developed a comprehensive Python-based automated vulnerability scanner that performs port scanning, service enumeration, and vulnerability identification. The tool maps findings to CVEs with severity assessment using CVSS scoring and generates structured reports with actionable remediation guidance.",
+    "technologies": ["Python", "Nmap", "CVE Database", "CVSS", "Network Security"],
+    "features": [
+      "Automated port scanning and service detection",
+      "Vulnerability identification and CVE mapping",
+      "CVSS-based severity assessment",
+      "Structured report generation with remediation steps",
+      "Support for multiple target types (single host, network ranges)"
+    ],
+    "achievements": [
+      "Awarded Best Project at college technical expo",
+      "Successfully identified critical vulnerabilities in test environments"
+    ],
+    "impact": "Demonstrated proficiency in automated security assessment and vulnerability management, providing practical value for penetration testing workflows.",
+    "icon": "fas fa-search"
+  },
+  {
+    "title": "Network & NFS Service Penetration Testing",
+    "shortDescription": "End-to-end penetration testing covering reconnaissance, exploitation, and post-exploitation.",
+    "fullDescription": "Performed comprehensive penetration testing of network services and NFS configurations, covering the full attack lifecycle from reconnaissance through post-exploitation. Identified critical service misconfigurations and privilege escalation risks in controlled environments.",
+    "technologies": ["Kali Linux", "Nmap", "Metasploit", "NFS Tools", "Linux"],
+    "features": [
+      "Complete reconnaissance phase using multiple tools",
+      "Exploitation of service misconfigurations",
+      "Post-exploitation privilege escalation techniques",
+      "Business impact assessment and documentation"
+    ],
+    "impact": "Validated attack paths and documented business impact, delivered remediation recommendations aligned with secure configuration best practices.",
+    "icon": "fas fa-network-wired"
+  },
+  {
+    "title": "FTP Service & Unauthorized Access Security Assessment",
+    "shortDescription": "Security assessment of FTP and file-sharing services for unauthorized access risks.",
+    "fullDescription": "Conducted thorough security assessment of FTP and file-sharing services to identify unauthorized access risks and insecure configurations. Assessed critical access control weaknesses and insecure file permissions in controlled lab environments.",
+    "technologies": ["FTP", "Linux", "Access Control", "Security Auditing"],
+    "features": [
+      "Comprehensive FTP service configuration review",
+      "Access control weakness identification",
+      "File permission security assessment",
+      "Controlled exploitation scenario validation"
+    ],
+    "impact": "Recommended hardening strategies, monitoring procedures, and patching protocols to secure file-sharing services against unauthorized access.",
+    "icon": "fas fa-folder-open"
+  },
+  {
+    "title": "Web Application & Privilege Escalation Testing",
+    "shortDescription": "Web application penetration testing focusing on directory traversal, file inclusion, and privilege escalation.",
+    "fullDescription": "Conducted comprehensive web application penetration testing covering directory traversal flaws, file inclusion vulnerabilities, and local privilege escalation scenarios. Achieved controlled remote code execution and demonstrated system-level impact through privilege escalation testing.",
+    "technologies": ["Burp Suite", "OWASP ZAP", "Web Security", "Linux Privilege Escalation"],
+    "features": [
+      "Directory traversal and path manipulation testing",
+      "Local and remote file inclusion exploitation",
+      "Controlled remote code execution demonstrations",
+      "Local privilege escalation testing and validation",
+      "Comprehensive vulnerability documentation"
+    ],
+    "impact": "Provided detailed remediation guidance on secure coding practices, input validation, and patch management to development teams.",
+    "icon": "fas fa-globe"
+  },
+  {
+    "title": "Keylogger & Payload Generator",
+    "shortDescription": "Controlled forensic and payload simulation tools for Windows and Android platforms.",
+    "fullDescription": "Developed controlled forensic and payload simulation tools for both Windows and Android platforms in isolated lab environments. Used for behavioral analysis, attack simulation, and defensive detection testing to enhance security team capabilities.",
+    "technologies": ["Python", "Windows API", "Android Development", "Malware Analysis"],
+    "features": [
+      "Cross-platform payload generation (Windows/Android)",
+      "Behavioral analysis capabilities",
+      "Attack simulation for blue team training",
+      "Detection mechanism testing"
+    ],
+    "impact": "Enhanced understanding of attack vectors and detection mechanisms, providing valuable experience in both offensive and defensive security operations.",
+    "icon": "fas fa-keyboard"
+  },
+  {
+    "title": "Agro's Corner – Online Marketplace",
+    "shortDescription": "PHP-based online marketplace connecting farmers directly with buyers.",
+    "fullDescription": "Developed a secure PHP-based online marketplace platform designed to connect farmers directly with buyers, eliminating intermediaries. Implemented comprehensive backend logic, authentication flows, and user role management with focus on secure data handling and optimized user experience.",
+    "technologies": ["PHP", "MySQL", "HTML/CSS", "JavaScript", "Web Security"],
+    "features": [
+      "User authentication and role-based access control",
+      "Secure payment gateway integration",
+      "Product listing and search functionality",
+      "Order management system",
+      "Secure data handling and input validation"
+    ],
+    "impact": "Demonstrated full-stack development skills with security-first approach, creating a reliable platform for agricultural commerce.",
+    "icon": "fas fa-shopping-cart"
+  },
+  {
+    "title": "Practical Security Labs",
+    "shortDescription": "Hands-on experience through TryHackMe, VulnHub CTFs, and OWASP practice environments.",
+    "fullDescription": "Extensive practical exposure through various security learning platforms including TryHackMe labs, VulnHub CTF challenges, PortSwigger Web Security Academy, and OWASP Juice Shop. Completed challenges ranging from beginner to intermediate levels, covering threat detection, exploitation techniques, and web application security.",
+    "technologies": ["TryHackMe", "VulnHub", "PortSwigger Labs", "OWASP Juice Shop", "CTF"],
+    "features": [
+      "Threat detection and exploitation practice",
+      "Web application security testing (OWASP Top 10)",
+      "Network penetration testing scenarios",
+      "Privilege escalation techniques",
+      "Real-world attack simulation"
+    ],
+    "impact": "Built strong foundational and practical skills in offensive security, demonstrating continuous learning and hands-on experience with industry-standard tools and techniques.",
+    "icon": "fas fa-flask"
+  }
+]
