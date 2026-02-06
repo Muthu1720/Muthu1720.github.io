@@ -16,5 +16,11 @@
     "issuer": "Hacker School",
     "date": "2024",
     "file": "HSCCSP_Certificate.pdf"
+  },
+  {
+    "name": "Cybersecurity Professional Internship Certificate",
+    "issuer": "Cartel Software (Hacker School)",
+    "date": "2024",
+    "file": "Internship_Cartel_Software.pdf"
   }
 ]
