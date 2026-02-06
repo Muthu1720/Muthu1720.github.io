@@ -178,6 +178,12 @@ async function loadCertificates() {
             const card = createCertCard(cert);
             container.appendChild(card);
         });
+        
+        // Generate thumbnails after cards are created
+        setTimeout(() => {
+            generateCertThumbnails();
+        }, 100);
+        
     } catch (error) {
         console.error('Error loading certificates:', error);
         document.getElementById('certContainer').innerHTML = 
@@ -192,7 +198,11 @@ function createCertCard(cert) {
 
     card.innerHTML = `
         <div class="cert-thumbnail">
-            <i class="fas fa-certificate"></i>
+            <canvas class="cert-preview-canvas" data-pdf="certificates/${cert.file}"></canvas>
+            <div class="cert-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Click to view</span>
+            </div>
         </div>
         <h3>${cert.name}</h3>
         <p>${cert.issuer}</p>
@@ -200,6 +210,36 @@ function createCertCard(cert) {
     `;
 
     return card;
+}
+
+// Generate PDF Thumbnails
+function generateCertThumbnails() {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    
+    const canvases = document.querySelectorAll('.cert-preview-canvas');
+    
+    canvases.forEach(canvas => {
+        const pdfPath = canvas.getAttribute('data-pdf');
+        
+        pdfjsLib.getDocument(pdfPath).promise.then(pdf => {
+            pdf.getPage(1).then(page => {
+                const viewport = page.getViewport({ scale: 0.5 });
+                const context = canvas.getContext('2d');
+                
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+                
+                page.render({
+                    canvasContext: context,
+                    viewport: viewport
+                });
+            });
+        }).catch(error => {
+            console.error('Error loading PDF thumbnail:', error);
+            // Show icon if PDF fails to load
+            canvas.parentElement.innerHTML = '<i class="fas fa-certificate"></i>';
+        });
+    });
 }
 
 // ===== PDF Certificate Modal ===== 
